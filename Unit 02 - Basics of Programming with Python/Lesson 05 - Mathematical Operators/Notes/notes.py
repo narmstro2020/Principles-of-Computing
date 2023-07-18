@@ -31,6 +31,17 @@ unary
 -: Unary minus
 '''
 
+'''
+Mathematical Assignment Operators
++=: Addition Assignment
+-=: Subtraction Assignment
+*=: Multiplication Assignment
+/=: Division Assignment
+**=: Exponentiation (powers) Assignment
+//=: Integer Division Assignment
+%=: Modulus Assignment
+'''
+
 sum = 34 + 42
 print("The sume of 34 and 42 is: ", sum)
 difference = 42 - 34
@@ -72,4 +83,16 @@ quotient = c // d
 remainder = c % d
 
 print("c divided by d with remainders is: ", quotient, "R", remainder)
+
+a = 5
+a = a + 1
+b = 7
+a = a + b
+
+a = 5
+a += 1
+
+a -= 1
+
+
 
