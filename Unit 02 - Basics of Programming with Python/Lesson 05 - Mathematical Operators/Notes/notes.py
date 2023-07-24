@@ -95,4 +95,27 @@ a += 1
 a -= 1
 
 
+'''
+Please -> Parentheses or Grouping Symbols
+Excuse -> Exponentiation
+My -> Multiplication and Division
+Dear -> Multiplicatio and Division
+Aunt -> Addition
+Sally -> Subtraction 
 
+'''
+
+x = (3 + 5) ** 2 + 7
+print(x)
+
+y = 2 ** 3 ** 2
+# Chained exponent.   right to left
+# 2 ** 9
+# 512
+print(y)
+
+z = 2 / 3
+print(z)
+
+a = 0.1
+print(a + a + a)
