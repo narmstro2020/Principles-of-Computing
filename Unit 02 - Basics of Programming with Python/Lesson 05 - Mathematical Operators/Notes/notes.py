@@ -25,7 +25,7 @@ binary
 /: Division
 **: Exponentiation (powers)
 //: Integer Division
-% : Modulus 
+% : Modulus Division
 
 unary
 -: Unary minus
@@ -43,7 +43,7 @@ Mathematical Assignment Operators
 '''
 
 sum = 34 + 42
-print("The sume of 34 and 42 is: ", sum)
+print("The sum of 34 and 42 is:", sum)
 difference = 42 - 34
 print("The difference of 42 and 34 is: ", difference)
 a = 34
@@ -105,7 +105,7 @@ Sally -> Subtraction
 
 '''
 
-x = (3 + 5) ** 2 + 7
+x = ((3+2) + 5) ** 2 + 7
 print(x)
 
 y = 2 ** 3 ** 2
