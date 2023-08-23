@@ -14,8 +14,12 @@ The Formula is
 F = 1.8 * C + 32
 '''
 
-fah = float(input("Enter the temp in degrees F. ")) 
-cel = 5 * (fah - 32) / 9
-print("The temperature in degrees C is:", cel)
+F_text = input("Enter the temp in degrees F: ")
+F = float(F_text)
+C = 5 * (F - 32) / 9
+print("The temp in degrees C is:", C)
 
-#YOUDO:  the same but for the celsius to fahrenheit
+C_text = input("Enter the temp in degrees C: ")
+##YOU:  do the same but to convert C to F
+
+
