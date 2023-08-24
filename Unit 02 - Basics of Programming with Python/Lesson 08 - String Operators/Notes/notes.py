@@ -10,6 +10,11 @@ b = "Mr. "
 name = b + a
 print(name)
 
+c = 5
+d = "Fred"
+e = d + str(c)
+print(e)
+
 #string concatenation
 first = "Nicholas"
 last = "Armstrong"
@@ -17,7 +22,6 @@ full_name = first + " " + last
 print(full_name)
 
 print(first + " " + last)
-
 #string copying
 
 print(first * 2)

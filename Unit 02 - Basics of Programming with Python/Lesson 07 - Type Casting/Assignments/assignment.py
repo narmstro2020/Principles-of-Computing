@@ -13,13 +13,14 @@ Ask the user for the temp in Celsius and convert to Fahrenheit
 The Formula is
 F = 1.8 * C + 32
 '''
-
 F_text = input("Enter the temp in degrees F: ")
 F = float(F_text)
 C = 5 * (F - 32) / 9
-print("The temp in degrees C is:", C)
+print("The temp in degrees C is", C)
 
 C_text = input("Enter the temp in degrees C: ")
-##YOU:  do the same but to convert C to F
+#YOUDO the rest.  Find the temperature in degrees F
+
+
 
 
