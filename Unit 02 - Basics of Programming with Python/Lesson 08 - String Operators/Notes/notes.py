@@ -25,7 +25,7 @@ print(full_name)
 print(first + " " + last)
 #string copying
 
-print((first + " ") * 5)
+print(first * 5)
 
 a = 4.6
 b = "Hi "

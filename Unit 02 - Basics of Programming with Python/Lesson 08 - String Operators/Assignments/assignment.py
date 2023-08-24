@@ -10,8 +10,8 @@ Nick was the input
 
 NickNickNick
 '''
-
 first = input("Enter your first name: ")
-###YOUDO  Ask the user with the input() the following question "How many repeats do you want?" and store as a variable repeats
-###YODO  Convert the repeats variable to an int()  and store in repeats_num
+###YOUDO ask the user with the input() "How many repeats do you want: "  Store this in a variable called repeats
+###YOUDO convert repeats to repeats_num with the int()
 print(first * repeats_num)
+
