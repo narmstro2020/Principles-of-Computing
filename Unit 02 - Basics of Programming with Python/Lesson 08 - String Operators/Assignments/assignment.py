@@ -11,7 +11,7 @@ Nick was the input
 NickNickNick
 '''
 
-first_name = input("What is your first name? ")
-###YOUDO   Ask the user for the number of repeats and store it as a variable called repeats
-###YOUDO   convert repeats to an int using the int() function and store it in a variable called repeats_number
-print(first_name * repeats_num)
+first = input("Enter your first name: ")
+###YOUDO  Ask the user with the input() the following question "How many repeats do you want?" and store as a variable repeats
+###YODO  Convert the repeats variable to an int()  and store in repeats_num
+print(first * repeats_num)

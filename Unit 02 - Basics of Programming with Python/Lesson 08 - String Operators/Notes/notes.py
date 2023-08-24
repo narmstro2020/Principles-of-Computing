@@ -6,12 +6,13 @@ a = "Nicholas Armstrong"
 num_letters_in_a = len(a)
 print(num_letters_in_a)
 
-b = "Mr. "
-name = b + a
+b = "Mr."
+space = " "
+name = b + space +  a
 print(name)
 
 c = 5
-d = "Fred"
+d = "$"
 e = d + str(c)
 print(e)
 
@@ -24,7 +25,7 @@ print(full_name)
 print(first + " " + last)
 #string copying
 
-print(first * 2)
+print((first + " ") * 5)
 
 a = 4.6
 b = "Hi "
