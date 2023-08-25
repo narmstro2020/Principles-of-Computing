@@ -4,9 +4,33 @@ a = "Hi There"
 b = 4
 c = -5.3
 
-'''
-All of the math operators.  Review notes in lesson 5 for all of them. 
 
+#single line comment
+
+'''
+Mathematical Operators
+binary
++: Addition
+-: Subtraction
+*: Multiplication
+/: Division
+**: Exponentiation (powers)
+//: Integer Division
+% : Modulus Division
+
+unary
+-: Unary minus
+'''
+
+'''
+Mathematical Assignment Operators
++=: Addition Assignment
+-=: Subtraction Assignment
+*=: Multiplication Assignment
+/=: Division Assignment
+**=: Exponentiation (powers) Assignment
+//=: Integer Division Assignment
+%=: Modulus Assignment
 '''
 
 an_integer_string = "7"
