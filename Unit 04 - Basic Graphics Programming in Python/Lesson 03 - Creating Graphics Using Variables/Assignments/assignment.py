@@ -31,14 +31,22 @@ canvas_height = 400
 bottom_diameter = canvas_height/2
 middle_diameter = bottom_diameter/2
 top_diameter = middle_diameter/2
+color = "grey"
+center_x = canvas_width / 2
 
 # Create canvas
 screen = Canvas(root, width = canvas_width, height = canvas_height, bg = "white")
 screen.pack()
 
 # Add shapes here!
+bottom_center_y = canvas_height - bottom_diameter / 2
+top_left_x = center_x - bottom_diameter / 2
+top_left_y = bottom_center_y - bottom_diameter / 2
 
+bot_right_x = center_x + bottom_diameter / 2
+bot_right_y = bottom_center_y + bottom_diameter / 2
 
+screen.create_oval(top_left_x, top_left_y, bot_right_x, bot_right_y, fill=color)
 
 # Add shapes to canvas
 mainloop()
