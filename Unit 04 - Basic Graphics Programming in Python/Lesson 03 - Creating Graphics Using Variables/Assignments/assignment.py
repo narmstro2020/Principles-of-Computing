@@ -1,12 +1,20 @@
 """
 This program will draw a snowman on the screen.
-The snowman should have three sections, a bottom snowball with diameter bottom_diameter, a middle snowball with diameter middle_diameter, and a top snowball with diameter top_diameter.
+The snowman should have three sections, a bottom snowball with diameter bottom_diameter, 
+a middle snowball with diameter middle_diameter, 
+and a top snowball with diameter top_diameter.
 
 The circles should all be light gray.
 
-The snowman should be centered horizontally in the world, and should be sitting on the bottom of the canvas (You will need to use the canvas_height variable).
+The snowman should be centered horizontally in the world, 
+Use canvas_height at 400, canvas_width at 400
 
-Use the variables instead of hardcoded values to create your snowman so that the snowman will always be sitting in the same position no matter the size of the canvas!
+bottom_diameter = 150
+middle_diameter = 100
+top_dimater = 75
+
+Use the variables instead of hardcoded values to create your snowman 
+so that the snowman will always be sitting in the same position no matter the size of the canvas!
 
 If you are feeling adventurous, can you give the snowman a hat, buttons, or eyes?
 

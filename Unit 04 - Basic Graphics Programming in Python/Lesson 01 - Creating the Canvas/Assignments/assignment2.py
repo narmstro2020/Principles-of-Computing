@@ -14,7 +14,7 @@ screen = Canvas(root, width=200, height=200, bg="#FF0000")
 screen.pack()
 
 
-screen.create_line(50, 200, 50, 0, 100, 200, fill="#FFFFFF", width=3.0)  #Sample start
+screen.create_line(50, 200, 50, 0, 150, 200, fill="#FFFFFF", width=3.0)  #Sample start
 ## continue drawing your letter
 
 mainloop()
