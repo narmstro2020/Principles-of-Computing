@@ -50,6 +50,6 @@ screen.create_oval(top_left_x, top_left_y, bot_right_x, bot_right_y, fill=color)
 
 
 middle_center_y = canvas_height - bottom_diameter - middle_diameter / 2
-#cpy lines 43-49 and change bottom_diameter to middle for the copy of 43-49
+#cpy lines 43-49 and change bottom to middle for the copy of 43-49
 # Add shapes to canvas
 mainloop()
