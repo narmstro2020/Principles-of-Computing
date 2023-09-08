@@ -11,7 +11,7 @@ Use canvas_height at 400, canvas_width at 400
 
 bottom_diameter = 150
 middle_diameter = 100
-top_dimater = 75
+top_diameter = 75
 
 Use the variables instead of hardcoded values to create your snowman 
 so that the snowman will always be sitting in the same position no matter the size of the canvas!
@@ -26,7 +26,7 @@ from tkinter import *
 
 root = Tk()
 
-canvas_width = 300
+canvas_width = 400
 canvas_height = 400
 bottom_diameter = canvas_height/2
 middle_diameter = bottom_diameter/2
