@@ -28,9 +28,9 @@ root = Tk()
 
 canvas_width = 400
 canvas_height = 400
-bottom_diameter = canvas_height/2
-middle_diameter = bottom_diameter/2
-top_diameter = middle_diameter/2
+bottom_diameter = 150
+middle_diameter = 100
+top_diameter = 75
 color = "grey"
 center_x = canvas_width / 2
 
