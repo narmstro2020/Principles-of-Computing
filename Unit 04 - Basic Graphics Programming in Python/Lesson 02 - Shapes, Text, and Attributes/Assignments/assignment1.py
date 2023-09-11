@@ -8,8 +8,11 @@ from tkinter import *
 root = Tk()
 
 # Create canvas
-screen = Canvas(root, width = 400, height = 300, bg = "white")
+screen = Canvas(root, width = 400, height = 300, bg = "black")
 screen.pack()
+
+# Draw white rectangle
+
 
 # Draw red rectangle
 screen.create_rectangle(0, 150, 400, 300, fill="red", outline="")
