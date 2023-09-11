@@ -39,6 +39,7 @@ screen = Canvas(root, width = canvas_width, height = canvas_height, bg = "white"
 screen.pack()
 
 # Add shapes here!
+#Makes a bottom Circle
 bottom_center_y = canvas_height - bottom_diameter / 2
 top_left_x = center_x - bottom_diameter / 2
 top_left_y = bottom_center_y - bottom_diameter / 2
@@ -48,8 +49,10 @@ bot_right_y = bottom_center_y + bottom_diameter / 2
 
 screen.create_oval(top_left_x, top_left_y, bot_right_x, bot_right_y, fill=color)
 
-
+#Makes the middle circle - Lines are repetitive.  
+#Only thing that changes is bottom to middle
 middle_center_y = canvas_height - bottom_diameter - middle_diameter / 2
-#cpy lines 43-49 and change bottom to middle for the copy of 43-49
+#copy lines 44-50 and change bottom to middle for the copy of 43-49
+#don't change bot, change bottom
 # Add shapes to canvas
 mainloop()
