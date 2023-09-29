@@ -3,7 +3,7 @@ from random import randint
 
 secret_number = randint(0, 20)
 
-user_guess = "Enter a guess between 0 and 20"
+user_guess = input("Enter a guess between 0 and 20")
 number_of_guesses = 1
 while user_guess != secret_number:
     number_of_guesses += 1
