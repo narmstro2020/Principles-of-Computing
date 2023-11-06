@@ -1,0 +1,4 @@
+Take your list from before and iterate through it printing out each item on its own line
+Then delete the 4th item
+Then swap items 0, and 1
+print again.  
