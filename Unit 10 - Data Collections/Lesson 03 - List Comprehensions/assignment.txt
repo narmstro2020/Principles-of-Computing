@@ -1,0 +1,2 @@
+Create a list from 1 to 1000 of only those number that are multiples of 4
+You will need a list comprehension to do this.  
