@@ -1,5 +1,5 @@
 '''
-Print out what grade level a student is based on input grade level
+Print out what school they are in a student is based on input grade level
 
 '''
 

@@ -14,10 +14,13 @@ if condition:
 '''
 
 
-if answer:
+if (answer):
     print("Congratulations you can run for the presidency")
+    print("Congratulations you can run for the presidency")
+
 else:
     print("Unfortunately you cannot run for president")
+
 
 '''
 

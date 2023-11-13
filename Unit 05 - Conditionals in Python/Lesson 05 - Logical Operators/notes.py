@@ -25,6 +25,10 @@ Or Truth Table
     True or False = True
     False or True = True
     False or False = False
+
+python uses or  other languages use ||
+python uses and other languages use &&
+python uses not other languages use !
 '''
 
 age_string = input("What is your age? ")
@@ -33,12 +37,12 @@ age = int(age_string)
 citizen_string = input("Are you a citizen (Enter nothing for False and Anything True)")
 citizen = bool(citizen_string)
 
-age_test_for_pres_and_senate = age >= 35
-age_test_for_congress = age >= 25
+old_enough_for_pres = age >= 35
+old_enough_for_congress = age >= 25
 
-if age_test_for_pres_and_senate and citizen:
+if old_enough_for_pres and citizen:
     print("You can run for president, senate, or congress")
-elif age_test_for_congress and citizen:
+elif old_enough_for_congress and citizen:
     print("You can run for congress only")
 elif citizen:
     print("You are too young for office")

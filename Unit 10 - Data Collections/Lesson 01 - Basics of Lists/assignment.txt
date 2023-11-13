@@ -1,2 +1,8 @@
 Create a list of your favorite movies in order.  First element is most favorite.  Last element will be least favorite
 Use slicing to print your 3rd to 5th favorite movies.  
+
+Starter Code
+
+fav_movies = []
+
+#print using slicing the 3rd to 5th of fav_movies
