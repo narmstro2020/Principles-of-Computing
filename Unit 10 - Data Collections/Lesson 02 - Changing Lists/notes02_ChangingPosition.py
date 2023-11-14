@@ -37,5 +37,5 @@
 # print(random_numbers)
 
 top_cities = ['New York City', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']
-print(sorted(top_cities))
+print(sorted(top_cities, reverse=True))
 print(top_cities)

@@ -1,4 +1,5 @@
-Take your list from before and iterate through it printing out each item on its own line
-Then delete the 4th item
-Then swap items 0, and 1
+Take your list from before and 
+[Notes 1] Iterate through it printing out each item on its own line
+[Notes 5] Then delete the 4th item
+[Notes 2] Then swap items 0, and 1
 print again.  
