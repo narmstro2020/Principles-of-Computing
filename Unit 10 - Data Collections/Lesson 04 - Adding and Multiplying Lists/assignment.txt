@@ -1,0 +1,3 @@
+Take your favorite movies list and append the next 5 to it.  
+
+Then replace your 2nd favorite movie with something else using the insert method.   
