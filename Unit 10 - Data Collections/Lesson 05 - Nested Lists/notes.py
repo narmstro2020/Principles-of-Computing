@@ -1,10 +1,16 @@
-# numbers = [1, 2, 3, 4]
+numbers = [1, 2, 3, 4]
 
-# countries = ['UK', 'US', 'Germany']
+countries = ['UK', 'US', 'Germany']
 
-# countries = [1, 'UK', 2, 'US']
+countries = [1, 'UK', 2, 'US']
 
-# cells = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']]
+# cells = [
+#     # col0  col1  col2
+#     ['A1', 'A2', 'A3'], # row 0
+#     ['B1', 'B2', 'B3']  # row 1
+# ]
+
+# print(cells)
 
 # print(cells[0])
 
@@ -14,39 +20,41 @@
 
 # print(cells[1][2])
 
-# cells = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']]
-# for x in cells:
-#     print('Element:', x)
+# cells = [
+#     ['A1', 'A2', 'A3'], 
+#     ['B1', 'B2', 'B3']
+# ]
+# for row in cells:
+#     print("Row:", row)
 
-# cells = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']]
-# for x in cells:
-#     for y in x:
-#         print('Element:', y)
+# table = [
+#     ['A1', 'A2', 'A3'], 
+#     ['B1', 'B2', 'B3']
+# ]
 
-# table = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']]
 # for row in table:
-#     for cell in row:
-#         print('Element:', cell)
+#     for col in row:
+#         print('Element:', col)
 
-# table = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']]
-# for row in table:
-#     for cell in row:
-#         print(cell, '', end='')
-#     print()
-
-# #1 2 3 4 5
-# #1 2 3 4 5
-# #1 2 3 4 5
-# #1 2 3 4 5
-
-table = [[i for i in range(1, 6)] for j in range(4)]
-print(table)
-
-sprite = [
-    [3, 4, 6],
-    [3, 4, 5, 6],
-    [3, 4, 5, 6],
-    [3, 4, 5, 6],   
+table = [
+    ['A1', 'A2', 'A3'],
+    ['B1', 'B2', 'B3']
 ]
+for row in table:
+    for col in row:
+        print(col, '', end='')
+    print()
 
-print(sprite)
+# #1 2 3 4 5
+# #1 2 3 4 5
+# #1 2 3 4 5
+# #1 2 3 4 5
+
+table = [
+    [col for col in range(1, 6)]
+    for row in range(4)
+]
+for row in table:
+    for col in row:
+        print(col, '', end='')
+    print()
