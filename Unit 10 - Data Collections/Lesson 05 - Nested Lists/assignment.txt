@@ -1,0 +1,8 @@
+Create a 2d table of your list of five movies
+Each row should contain the number rank of your movie, then the name so something like this
+
+[[1, "Star Wars"],
+[2, "Godfather"], 
+etc..
+
+Then print the table row by row like in the examples before
