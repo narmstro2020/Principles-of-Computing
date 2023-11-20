@@ -1,3 +1,7 @@
-Take your favorite movies list and append the next 5 to it.  
+Take your favorite movies list and append the next 5 favorites to it. Use the append method 5 times. 
 
 Then replace your 2nd favorite movie with something else using the insert method.   
+This will actually give you 11 movies at the end.  But that's okay.  
+
+fav_movies.append("Star Wars")
+fav_movies.append("Back to the Future")
