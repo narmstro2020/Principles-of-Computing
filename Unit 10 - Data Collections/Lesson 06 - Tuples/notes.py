@@ -1,16 +1,15 @@
 empty_tuple = ()
 print(empty_tuple)
-one_el_tuple_a = (1,)
+one_el_tuple_a = (2, )
 print(one_el_tuple_a)
 print(type(one_el_tuple_a))
 
 one_el_tuple_b = 1,
 print(one_el_tuple_b)
 three_el_tuple = 1, 2, 3,
-
 print(three_el_tuple)
 
-user_data = ('John', 'American', 1964)
+user_data = ("John", 'American', 1964)
 
 user_data = ('Katya', 'Russian', 1980)
 
@@ -39,7 +38,8 @@ user_data = ('John', 'American', 1964)
 for element in user_data:
     print(element)
 
-user_data = ('John', 'American', 1964) + ('teacher', 'male')
+
+user_data = user_data + ('teacher', 'male')
 print(user_data)
 
 numbers = (0, 1) * 10
