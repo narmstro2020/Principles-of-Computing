@@ -1,0 +1,5 @@
+Create a tuple that represents and ordered pair by first getting x from the user as a number
+Then getting y as a number
+Make an x, y tuple called ordered_pair_2d
+Then get z from the user and make a new tuple that is ordered_pair_2d + (z, )
+and call it ordered_pair_3d
