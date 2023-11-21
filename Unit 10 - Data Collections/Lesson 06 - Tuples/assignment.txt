@@ -1,5 +1,9 @@
-Create a tuple that represents and ordered pair by first getting x from the user as a number
-Then getting y as a number
-Make an x, y tuple called ordered_pair_2d
-Then get z from the user and make a new tuple that is ordered_pair_2d + (z, )
-and call it ordered_pair_3d
+get x from user input
+get y from user input
+convert x and y to ints and store in x and y
+make a tuple called ordered_pair_2d using x and y
+get z from user input
+turn z into an int and store in z
+make a tuple called z_tuple using (z, )
+make a tuple called ordered_pair_3d as ordered_pair_2d + z_tuple
+
