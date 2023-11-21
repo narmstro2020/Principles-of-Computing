@@ -1,4 +1,7 @@
 create five ordered pair tuples names pair0, pair1, pair2, etc. 
 Each pair should consist of 2 numbers
-Put all 5 pairs in a list.  
+pair0 = (1, 2)
+
+Put all 5 pairs in a list called pairs.  
 Print them all using a for loop
+for pair in pairs: 
