@@ -1,0 +1,6 @@
+Create a program that asks the user for their first and last name
+Store it in a variable called name. 
+
+Slice the first 5 characters of name and store in short_name
+Convert short_name to uppercase
+print the result
