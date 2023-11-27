@@ -1,6 +1,7 @@
 Create a program that asks the user for their first and last name
 Store it in a variable called name. 
+name = input("Enter your first and last name: ")
 
 Slice the first 5 characters of name and store in short_name
-Convert short_name to uppercase
-print the result
+Convert short_name to uppercase and store in short_name_upper
+print short_name_upper
