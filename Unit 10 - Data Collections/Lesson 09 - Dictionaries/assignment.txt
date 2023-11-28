@@ -1,0 +1,10 @@
+Create a dictionary of courses compared to grades
+
+Something like this
+
+grade = {
+    "Principles of Computing" : "A"
+    #etc
+}
+
+then print out the dictionary
