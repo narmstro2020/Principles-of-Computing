@@ -1,0 +1,17 @@
+Create a function that prints asks for a user's first and last name 
+and stores it in a local variable called name
+print out name converted to lower case
+
+Then call the function a few times.  
+
+Call the function print_lower
+It should take any parameters
+
+Here is a idea of the start
+
+def print_lower():
+    #put your function logic Here
+
+#call the function
+#call the function again.  
+
