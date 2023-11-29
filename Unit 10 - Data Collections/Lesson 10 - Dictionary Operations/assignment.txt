@@ -1,0 +1,15 @@
+Create a dictionary of rankings for the key as numbers and movie titles as values.  
+Using your top 10 movies
+
+Something like this
+
+movies = {
+    1 : "The Godfather",
+    etcetera etceters and so on.  
+}
+
+Then use a for loop to print each movie like so
+
+"Movie #1 is The Godfather"
+"Movie #2 is ...
+and so on 
