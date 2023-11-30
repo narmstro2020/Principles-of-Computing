@@ -5,8 +5,23 @@ Something like this
 
 movies = {
     1 : "The Godfather",
+    2 : "Raiders of the Lost Ark",
+
     etcetera etceters and so on.  
 }
+
+for ranking, movie in movies.items():
+    print("Movie #", ranking, "is", movie)
+
+for item in movies.item():
+    (ranking, movie) = item
+    print("Movie #", ranking, "is", movie)
+
+for item in movies.items():
+    print("Movie #", item[0], "is", item[1])
+
+
+
 
 Then use a for loop to print each movie like so
 

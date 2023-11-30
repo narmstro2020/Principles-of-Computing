@@ -1,0 +1,13 @@
+def function1():
+    pass
+
+def function2():
+    pass
+
+def game_loop():
+    while(True):
+        function1()
+        function2()
+
+game_loop()
+

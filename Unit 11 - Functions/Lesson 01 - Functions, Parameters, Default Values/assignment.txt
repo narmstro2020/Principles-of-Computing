@@ -10,7 +10,8 @@ It shouldn't take any parameters
 Here is a idea of the start
 
 def print_lower():
-    #put your function logic Here
+    #get name from input function 
+    #print name.lower()
 
 #call the function
 #call the function again.  
