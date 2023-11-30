@@ -1,0 +1,7 @@
+make a function called determine median
+this function takes in a list of numbers called inputs
+
+!st: use the .sort() method to sort the list in place
+2nd: store the amount of items in the list as amount and use the len function to determine
+3rd: if amount is odd print the (amount / 2) + 1 item in the list
+4th: else print the average of the two middles.  
