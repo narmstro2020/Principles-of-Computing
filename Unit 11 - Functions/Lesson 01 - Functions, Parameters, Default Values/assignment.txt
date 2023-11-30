@@ -1,11 +1,11 @@
-Create a function that prints asks for a user's first and last name 
-and stores it in a local variable called name
+Create a function that asks for a user's first and last name.
+Stores it in a local variable called name
 print out name converted to lower case
 
 Then call the function a few times.  
 
 Call the function print_lower
-It should take any parameters
+It shouldn't take any parameters
 
 Here is a idea of the start
 

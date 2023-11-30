@@ -2,9 +2,9 @@ Create a dictionary of courses compared to grades
 
 Something like this
 
-grade = {
-    "Principles of Computing" : "A"
-    #etc
+grades = {
+    "Principles of Computing" : "A",
+    #etc for remaining classes
 }
 
 then print out the dictionary
