@@ -5,3 +5,4 @@ this function takes in a list of numbers called inputs
 2nd: store the amount of items in the list as amount and use the len function to determine
 3rd: if amount is odd print the (amount / 2) + 1 item in the list
 4th: else print the average of the two middles.  
+

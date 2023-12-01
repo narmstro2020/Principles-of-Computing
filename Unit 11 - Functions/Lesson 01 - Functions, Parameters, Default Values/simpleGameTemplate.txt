@@ -8,6 +8,9 @@ def game_loop():
     while(True):
         function1()
         function2()
+        checksForEnding()
+        ends if True
+        continues if False
 
 game_loop()
 
