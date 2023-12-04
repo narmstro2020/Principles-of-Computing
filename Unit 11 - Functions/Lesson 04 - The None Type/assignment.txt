@@ -1,0 +1,4 @@
+Let's fix the division operator with a function called divide.  
+This function will take two numbers and divide them.  If dividing by 
+zero we get None.  
+
