@@ -1,0 +1,3 @@
+Have the median function from yesterday return the median back to the place where it was called.  
+
+Then print it out at that level.  
