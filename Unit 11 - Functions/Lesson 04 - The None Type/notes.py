@@ -1,11 +1,10 @@
-# x = 0.0/ 0.0
+# x = 0.0 / 0.0
 # print(x)
-
 
 # print_return = print('Hello world')
 # print(print_return)
 
-# x = None
+x = None
 
 # if x:
 #     print("None is True")
@@ -21,9 +20,7 @@
 #     print('it does')
 
 def greet():
-    print('hello!')
-    
-    
+    print('hello!')    
 
 x = greet()
 print(x)

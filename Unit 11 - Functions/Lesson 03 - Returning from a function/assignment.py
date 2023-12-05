@@ -1,6 +1,6 @@
 def get_median_odd(numbers, count):
     index_median = count // 2
-    ##YOU DO return the median from numbers using [index_median]
+    ##YOU DO return the median from numbers[index_median]
 
 
 def get_median_even(numbers, count):
