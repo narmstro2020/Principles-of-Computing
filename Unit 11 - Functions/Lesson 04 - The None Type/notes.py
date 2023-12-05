@@ -1,13 +1,11 @@
-# print('hello')
+# x = 0.0/ 0.0
+# print(x)
 
-# length = len('hello')
-
-# number = input('what is the number?')
 
 # print_return = print('Hello world')
 # print(print_return)
 
-x = None
+# x = None
 
 # if x:
 #     print("None is True")
@@ -24,6 +22,7 @@ x = None
 
 def greet():
     print('hello!')
+    
     
 
 x = greet()
