@@ -1,6 +1,10 @@
 # factorial
-# 3! = 1 * 2 * 3 = 6
-# 5% = 1 * 2 * 3* 4 * 5 = 120
+# 3! = 3 * 2 * 1 = 6
+# 3! = 3 * 2!
+# 3! = 3 * 2 * 1!
+# 3! = 3 * 2 * 1
+# 5! = 5 * 4 * 3 * 2 * 1  = 120
+# 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 # iterative
 def get_factorial(number):
@@ -11,10 +15,10 @@ def get_factorial(number):
 
 print(get_factorial(6))
 
-def get_factorial_recursive(number):
-    if number <= 1:
-        return 1
-    return number * get_factorial_recursive(number - 1)
+# def get_factorial_recursive(number):
+#     if number <= 1:
+#         return 1
+#     return number * get_factorial_recursive(number - 1)
 
-get_factorial_recursive(6)
+# print(get_factorial_recursive(2600))
 

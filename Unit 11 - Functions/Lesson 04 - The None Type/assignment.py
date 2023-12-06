@@ -1,10 +1,8 @@
 def safeDivide(dividend, divisor):
     if divisor == 0:   #This is the case for undefined.  aka None
-        ## return something to handle this
-        pass    ##remove the pass when done. 
-    else:              #This is the case for regular division.  Return the regular divison of dividend and divisor
-        ## return something to handle this.  
-        pass  ## remove the pass when done.
+        return None
+    else:            
+        return dividend / divisor
 
 x = safeDivide(3, 0)   # Should give you None   because 3 / 0
 y = safeDivide(3, 2)   # Should give you 1.5    because 3 / 2
