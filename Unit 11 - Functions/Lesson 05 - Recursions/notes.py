@@ -13,12 +13,12 @@ def get_factorial(number):
         factorial *= x
     return factorial
 
-print(get_factorial(6))
+print(get_factorial(1000))
 
-# def get_factorial_recursive(number):
-#     if number <= 1:
-#         return 1
-#     return number * get_factorial_recursive(number - 1)
+def get_factorial_recursive(number):
+    if number <= 1:
+        return 1
+    return number * get_factorial_recursive(number - 1)
 
-# print(get_factorial_recursive(2600))
+print(get_factorial_recursive(1000))
 

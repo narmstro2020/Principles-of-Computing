@@ -4,7 +4,7 @@ def fibonacci_recursive(n):
     else:
         return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
-nterms = 10
+nterms = 1000000
 
 for i in range(nterms):
-    print(fibonacci_recursive(i))
+    print("Fib number", i, ":", fibonacci_recursive(i))
