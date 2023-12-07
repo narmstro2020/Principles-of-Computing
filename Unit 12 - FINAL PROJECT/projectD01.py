@@ -12,6 +12,7 @@ start_x = 0
 start_y = 0
 size = 20
 
+#finish this mario sprite
 small_mario = [
     [g, g, g, r, r, r, r, r, r, g, g, g, g, g, g, g], #row 0
     [g, g, r, r, r, r, r, r, r, r, r, r, g, g, g, g], #row 1
