@@ -13,8 +13,8 @@ start_y = 0
 size = 20
 
 small_mario = [
-    [],  #row0
-    [],  #row1
+    [g, g, g, r, r, r, r, r, r, g, g, g, g, g, g, g],  #row0
+    [g, g, r, r, r, r, r, r, r, r, r, r, g, g, g, g],  #row1
     [],  #row2
     [],  #row3
     [],  #row4
