@@ -2,10 +2,10 @@ from tkinter import *
 
 root = Tk()
 
-red = "#d62b18"
-brown = "#876f16"
-skin = "#fa9644"
-background = "#6185f8"
+r = "#d62b18"
+b = "#876f16"
+s = "#fa9644"
+g = "#6185f8"
 clear_color = "#4d2d44"
 
 start_x = 0
@@ -15,14 +15,10 @@ size = 20
 screen = Canvas(root, width=320, height=320, bg=clear_color)
 screen.pack()
 
-dummy_sprite = [
-    [red, brown, skin, background], 
-    [background, skin, red, brown]
-    ]
-
+#YOUDO.  Code Mario
 small_mario = [
-    [],
-    [],
+    [g, g, g, r, r, r, r, r, r, g, g, g, g, g, g, g],
+    [g, g, r, r, r, r, r, r, r, r, r, r, g, g, g, g],
     [],
     [],
     [],
