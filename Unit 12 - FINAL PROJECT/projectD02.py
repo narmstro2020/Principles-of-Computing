@@ -85,6 +85,6 @@ def draw_sprite(sprite):
         y += size
 
 
-draw_sprite(small_mario)
+draw_sprite(goomba)
 
 mainloop()
