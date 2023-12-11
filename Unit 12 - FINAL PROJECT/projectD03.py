@@ -35,7 +35,7 @@ small_mario = [
 
 # finish this goomba sprite
 goomba = [
-    [b, b],  # row 0
+    [g, g],  # row 0
     [],  # row 1
     [],  # row 2
     [],  # row 3
@@ -53,9 +53,8 @@ goomba = [
     [],  # row 15
 ]
 
-#YOUDO:  finish the big mario sprite
 big_mario = [
-    [b, b],  # row 0
+    [g, g],  # row 0
     [],  # row 1
     [],  # row 2
     [],  # row 3
@@ -87,6 +86,7 @@ big_mario = [
     [],  # row 29
     [],  # row 30
     [],  # row 31
+
 ]
 
 screen = Canvas(root, width=320, height=320, bg=clear_color)
@@ -109,6 +109,7 @@ def draw_rectangle(x, y, width, height, color):
     ending_y = y + height
     screen.create_rectangle(x, y, ending_x, ending_y, fill=color)
 
+
 def draw_sprite(sprite):
     x = start_x
     y = start_y
@@ -119,25 +120,26 @@ def draw_sprite(sprite):
         x = start_x
         y += size
 
+
 def clear():
     screen.delete("all")
 
+
 def draw():
     clear()
-    current_option = clicked.get()
-    if current_option == "Small Mario":
+    current_selection = clicked.get()
+    if current_selection == "Small Mario":
         draw_sprite(small_mario)
-    #YOUDO:  write code that will print the goomba when it's
-    #selected.  Should be as simple as handling another if condition.  
-    
+    # YOUDO:  handle the condition (hint hint.  if elif, else stuff) when the goomba was selected
+
 
 draw_button = Button(root, text="Draw Sprite", command=draw)
 draw_button.pack()
 
-#YOUDO:  create a Button that clear's the canvas.  Give it text "Clear"
-#connect it's command to the clear function.  Just like we did for the draw_button
+# YOUDO:  make a clear button.  This button has text "Clear" and calls the clear function for command
+# YOUDO:  don't forget to pack
 
-#if testing big mario.  use the draw_sprite(big_mario) here but note
-#you will only get the top half.  
+#Note if testing big mario.  You will only get the top half
+#call:  draw_sprite(big_mario) to test.  
 
 mainloop()
