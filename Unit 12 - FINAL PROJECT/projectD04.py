@@ -107,6 +107,7 @@ def draw_rectangle(x, y, width, height, color):
     ending_y = y + height
     screen.create_rectangle(x, y, ending_x, ending_y, fill=color)
 
+
 def draw_sprite16x16(sprite):
     x = 0
     y = 0
@@ -128,8 +129,8 @@ def draw_sprite16x32(sprite):
                 draw_rectangle(x, y, size, size, g)
             elif pixel >= 24:
                 draw_rectangle(x, y, size, size, g)
-            else:          
-                color = row[pixel - 8]            
+            else:
+                color = row[pixel - 8]  
                 draw_rectangle(x, y, size, size, color)
             x += size
         x = 0
@@ -140,6 +141,7 @@ def draw_sprite(sprite):
         draw_sprite16x16(sprite)
     elif len(sprite) == 32:
         draw_sprite16x32(sprite)
+
 
 
 def clear():
