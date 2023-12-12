@@ -67,22 +67,22 @@ big_mario = [
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 13
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 14
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 15
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 16
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 17
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 18
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 19
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 20
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 21
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 22
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 23
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 24
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 25
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 26
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 27
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 28
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 29
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 30
-    [k, k, k, k, k, k, k, k, k, k, k, k, k, k, k, k],  # row 31
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 16
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 17
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 18
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 19
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 20
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 21
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 22
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 23
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 24
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 25
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 26
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 27
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 28
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 29
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 30
+    [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 31
 
 ]
 
@@ -107,7 +107,7 @@ def draw_rectangle(x, y, width, height, color):
     ending_y = y + height
     screen.create_rectangle(x, y, ending_x, ending_y, fill=color)
 
-def draw_sprite16(sprite):
+def draw_sprite16x16(sprite):
     x = 0
     y = 0
     size = 20
@@ -118,30 +118,28 @@ def draw_sprite16(sprite):
         x = 0
         y += size
         
-def draw_sprite32(sprite):
+def draw_sprite16x32(sprite):
     x = 0
     y = 0
     size = 10
     for row in sprite:
-        for i in range(32):
-            if i < 8:
+        for pixel in range(32):
+            if pixel < 8:
                 draw_rectangle(x, y, size, size, g)
-            elif i >= 24:
+            elif pixel >= 24:
                 draw_rectangle(x, y, size, size, g)
-            else:
-                color = row[i - 8]
+            else:          
+                color = row[pixel - 8]            
                 draw_rectangle(x, y, size, size, color)
             x += size
         x = 0
-        y += size      
-
+        y += size
 
 def draw_sprite(sprite):
     if len(sprite) == 16:
-        draw_sprite16(sprite)
+        draw_sprite16x16(sprite)
     elif len(sprite) == 32:
-        draw_sprite32(sprite)
-
+        draw_sprite16x32(sprite)
 
 
 def clear():
@@ -159,14 +157,11 @@ def draw():
         draw_sprite(big_mario)
 
 
-
 draw_button = Button(root, text="Draw Sprite", command=draw)
 draw_button.pack()
 
 clear_button = Button(root, text="Clear", command=clear)
 clear_button.pack()
 
-# Note if testing big mario.  You will only get the top half
-# call:  draw_sprite(big_mario) to test.
 
 mainloop()
