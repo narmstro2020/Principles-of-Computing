@@ -11,7 +11,6 @@ clear_color = "#4d2d44"  # purpley color
 pixel_size = 20
 
 
-
 # finish this mario sprite
 small_mario = [
     [g, g, g, r, r, r, r, r, r, g, g, g, g, g, g, g],  # row 0
@@ -86,10 +85,9 @@ big_mario = [
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 29
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 30
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 31
-
 ]
 
-#YOUDO:  make the peach sprite add it to options.  
+#YOUDO:  draw peach 
 peach = [
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 0
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 1
@@ -123,12 +121,11 @@ peach = [
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 29
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 30
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 31
+
 ]
 
 screen = Canvas(root, width=320, height=320, bg=clear_color)
 screen.pack()
-
-current_sprite = small_mario
 
 options = [
     "Small Mario",
@@ -142,6 +139,7 @@ clicked.set("Small Mario")
 drop_down = OptionMenu(root, clicked, *options)
 drop_down.pack()
 
+current_sprite = small_mario
 
 def draw_rectangle(x, y, width, height, color):
     ending_x = x + width
@@ -153,12 +151,11 @@ def draw_sprite(sprite):
     current_sprite = sprite
     x = 0
     y = 0
-    height_in_pixels = len(sprite)
-    width_in_pixels = len(sprite[0])
-    height = height_in_pixels * pixel_size
-    width = width_in_pixels * pixel_size
-    screen.config(width=width, height=height)
-
+    sprite_height_pixels = len(sprite)
+    sprite_width_pixels = len(sprite[0])
+    canvas_height = sprite_height_pixels * pixel_size
+    canvas_width = sprite_width_pixels * pixel_size
+    screen.config(width=canvas_width, height=canvas_height)
     for row in sprite:
         for color in row:
             draw_rectangle(x, y, pixel_size, pixel_size, color)
