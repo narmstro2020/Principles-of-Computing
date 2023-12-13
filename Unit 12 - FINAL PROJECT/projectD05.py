@@ -7,6 +7,9 @@ r = "#d62b18"  # mario's red
 b = "#876f16"  # mario's brown, goomba brown
 s = "#fa9644"  # mario's skin tone, goomba lite tan
 g = "#6185f8"  # background
+pr = "#c41d0d" #peach red
+pw = "#fffeff" #peach white
+pc = "#f29900" #peach crown and skin
 clear_color = "#4d2d44"  # purpley color
 pixel_size = 20
 
