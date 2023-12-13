@@ -7,11 +7,12 @@ r = "#d62b18"  # mario's red
 b = "#876f16"  # mario's brown, goomba brown
 s = "#fa9644"  # mario's skin tone, goomba lite tan
 g = "#6185f8"  # background
-pr = "#c41d0d" #peach red
-pw = "#fffeff" #peach white
-pc = "#f29900" #peach crown and skin
+pr = "#c41d0d"  # peach red
+pw = "#fffeff"  # peach white
+pc = "#f29900"  # peach crown and skin
 clear_color = "#4d2d44"  # purpley color
 pixel_size = 20
+
 
 
 # finish this mario sprite
@@ -90,7 +91,6 @@ big_mario = [
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 31
 ]
 
-#YOUDO:  draw peach 
 peach = [
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 0
     [r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r],  # row 1
@@ -124,7 +124,6 @@ peach = [
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 29
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 30
     [b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b],  # row 31
-
 ]
 
 screen = Canvas(root, width=320, height=320, bg=clear_color)
@@ -149,16 +148,16 @@ def draw_rectangle(x, y, width, height, color):
     ending_y = y + height
     screen.create_rectangle(x, y, ending_x, ending_y, fill=color)
 
-
 def draw_sprite(sprite):
     current_sprite = sprite
     x = 0
     y = 0
-    sprite_height_pixels = len(sprite)
-    sprite_width_pixels = len(sprite[0])
-    canvas_height = sprite_height_pixels * pixel_size
-    canvas_width = sprite_width_pixels * pixel_size
+    height_in_pixels = len(sprite)
+    width_in_pixels = len(sprite[0])
+    canvas_height = height_in_pixels * pixel_size
+    canvas_width = width_in_pixels * pixel_size
     screen.config(width=canvas_width, height=canvas_height)
+    
     for row in sprite:
         for color in row:
             draw_rectangle(x, y, pixel_size, pixel_size, color)
