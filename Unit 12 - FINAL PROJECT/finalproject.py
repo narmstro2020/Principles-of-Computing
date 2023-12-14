@@ -177,6 +177,7 @@ def draw_rectangle(x, y, width, height, color):
 
 
 def draw_sprite(sprite):
+    clear()
     current_sprite = sprite
     x = 0
     y = 0
@@ -199,7 +200,6 @@ def clear():
 
 #YOUDO:  add elifs for remaining sprites
 def draw():
-    clear()
     current_selection = clicked.get()
     current_sprite_name = current_selection
     if current_selection == "Small Mario":
@@ -217,22 +217,23 @@ def luigi():
     #use whatever sprite is in current_sprite along with a double for loop
     for row in current_sprite:
         for color in row:
-            #to create the luigi_sprite but with different colors:  red -> white, mario_skin -> luigi-skin, mario_hair -> green
-            #Then call the draw function with luigi_sprite
+            #build the luigi_sprite from current_sprite but with different colors:  
+            # red -> white, mario_skin -> luigi-skin, mario_hair -> green
             pass #remove when done.  
+    #Then call the draw_sprite function with luigi_sprite
     pass  #Don't forget to remove the pass when done.  
 
 #YOUDO:  create the fire function
 def fire():
-    # check if the current_sprite_name is Big Mario
+    # check if the current_sprite_name is either Big Mario
     # if it is.  Then
     fire_sprite = []
     # use whatever sprite is in current_sprite along with a double for loop
     for row in current_sprite:
         for color in row:
-            # to create the luigi_sprite but with different colors:
-            # Then call the draw function with fire_sprite
+            # build the fire_sprite from current_sprite but with different colors:
             pass  # remove when done.
+    # Then call the draw_sprite function with fire_sprite
     pass  # Don't forget to remove the pass when done.
 
 draw_button = Button(root, text="Draw Sprite", command=draw)
@@ -241,7 +242,7 @@ draw_button.pack()
 clear_button = Button(root, text="Clear", command=clear)
 clear_button.pack()
 
-#YOUDO:  Make a button called LUIGI that makes only the small mario or big mario  into luigi.  NEED A FUNCTION CALLED luigi
+#YOUDO:  Make a button called LUIGI that makes only the small mario or big mario into luigi.  NEED A FUNCTION CALLED luigi
 #YOUDO:  Don't forget to pack.  
 
 #YOUDO:  Make a button called FIRE that makes big mario fire.  NEED A FUNCTION CALLED fire
