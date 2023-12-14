@@ -213,18 +213,24 @@ def luigi():
     #if it is.  Then 
     luigi_sprite = []
     #use whatever sprite is in current_sprite along with a double for loop
-    #to create the luigi_sprite but with different colors:  red -> white, mario_skin -> luigi-skin, mario_hair -> green
-    #Then call the draw function with luigi_sprite
+    for row in current_sprite:
+        for color in row:
+            #to create the luigi_sprite but with different colors:  red -> white, mario_skin -> luigi-skin, mario_hair -> green
+            #Then call the draw function with luigi_sprite
+            pass #remove when done.  
     pass  #Don't forget to remove the pass when done.  
 
 #YOUDO:  create the fire function
 def fire():
-    # check if the current_sprite_name is either Small Mario or Big Mario
+    # check if the current_sprite_name is Big Mario
     # if it is.  Then
     fire_sprite = []
     # use whatever sprite is in current_sprite along with a double for loop
-    # to create the fire_sprite but with different colors:
-    # Then call the draw function with fire_sprite
+    for row in current_sprite:
+        for color in row:
+            # to create the luigi_sprite but with different colors:
+            # Then call the draw function with fire_sprite
+            pass  # remove when done.
     pass  # Don't forget to remove the pass when done.
 
 draw_button = Button(root, text="Draw Sprite", command=draw)
