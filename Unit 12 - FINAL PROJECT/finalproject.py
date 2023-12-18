@@ -18,6 +18,7 @@ bs = "#ffaa60" # bowser skin
 bw = "#ffffff" # bowser white and luigi white
 lg = "#0c9300" #luigi green
 ls = "#ea9e22" #luigi skin
+lw = bw
 fr = "#f73804" #fire red
 fw = "#ffe1ab" #fire white
 fs = "#ffa441" #fire skin
@@ -178,7 +179,6 @@ def draw_rectangle(x, y, width, height, color):
 
 def draw_sprite(sprite):
     clear()
-    current_sprite = sprite
     x = 0
     y = 0
     height_in_pixels = len(sprite)
@@ -200,28 +200,37 @@ def clear():
 
 #YOUDO:  add elifs for remaining sprites
 def draw():
+    global current_sprite
+    global current_sprite_name
     current_selection = clicked.get()
     current_sprite_name = current_selection
     if current_selection == "Small Mario":
+        current_sprite = small_mario
         draw_sprite(small_mario)
     elif current_selection == "Goomba":
+        current_sprite = goomba
         draw_sprite(goomba)
     elif current_selection == "Big Mario":
+        current_sprite = big_mario
         draw_sprite(big_mario)
+
         
-#YOUDO:  create the luigi function
 def luigi():
-    #check if the current_sprite_name is either Small Mario or Big Mario
-    #if it is.  Then 
-    luigi_sprite = []
-    #use whatever sprite is in current_sprite along with a double for loop
-    for row in current_sprite:
-        for color in row:
-            #build the luigi_sprite from current_sprite but with different colors:  
-            # red -> white, mario_skin -> luigi-skin, mario_hair -> green
-            pass #remove when done.  
-    #Then call the draw_sprite function with luigi_sprite
-    pass  #Don't forget to remove the pass when done.  
+    if(current_sprite_name == "Small Mario" or current_sprite_name == "Big Mario"):       
+        luigi_sprite = []
+        for row in current_sprite:
+            new_row = []
+            for color in row:
+                if color == r:
+                    new_row.append(lw)
+                elif color == s:
+                    new_row.append(ls)
+                elif color == b:
+                    new_row.append(lg)
+                else:
+                    new_row.append(color)
+            luigi_sprite.append(new_row)
+        draw_sprite(luigi_sprite)
 
 #YOUDO:  create the fire function
 def fire():
@@ -242,8 +251,8 @@ draw_button.pack()
 clear_button = Button(root, text="Clear", command=clear)
 clear_button.pack()
 
-#YOUDO:  Make a button called LUIGI that makes only the small mario or big mario into luigi.  NEED A FUNCTION CALLED luigi
-#YOUDO:  Don't forget to pack.  
+draw_luigi = Button(root, text="Draw Luigi", command=luigi)
+draw_luigi.pack()
 
 #YOUDO:  Make a button called FIRE that makes big mario fire.  NEED A FUNCTION CALLED fire
 #YOUDO:  Don't forget to pack.  
